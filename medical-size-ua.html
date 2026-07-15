@@ -1,54 +1,60 @@
-<div class="medical-glove-size-container" style="font-family: system-ui, -apple-system, sans-serif; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; background-color: #f8fafc; max-width: 600px; margin: 15px auto; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-  <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 15px; font-size: 18px; font-weight: 700; text-align: center;">
-    📐 Таблиця розмірів медичних рукавичок
+<div class="glove-size-widget" style="font-family: system-ui, -apple-system, sans-serif; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; background-color: #f8fafc; max-width: 700px; margin: 15px auto; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+  
+  <h3 style="color: #0f172a; margin-top: 0; margin-bottom: 20px; font-size: 18px; font-weight: 700; text-align: center;">
+    📐 Таблиця для визначення розміру одноразових рукавичок
   </h3>
-  
-  <table style="width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 8px; overflow: hidden; font-size: 14px;">
-    <thead>
-      <!-- Глибокий темно-синій фірмовий фон для шапки GloveHub -->
-      <tr style="background-color: #1e3a8a !important; text-align: center;">
-        <!-- Примусово фіксуємо білий колір тексту для кожної клітинки шапки -->
-        <th style="padding: 14px 10px; font-weight: 700; color: #ffffff !important; font-size: 14px !important; border: none !important;">
-          <span style="color: #ffffff !important;">Розмір</span>
-        </th>
-        <th style="padding: 14px 10px; font-weight: 700; color: #ffffff !important; font-size: 14px !important; border: none !important;">
-          <span style="color: #ffffff !important;">Окружність долоні (мм)</span>
-        </th>
-        <th style="padding: 14px 10px; font-weight: 700; color: #ffffff !important; font-size: 14px !important; border: none !important;">
-          <span style="color: #ffffff !important;">Довжина (мм)</span>
-        </th>
-      </tr>
-    </thead>
-    <tbody style="color: #334155; text-align: center;">
-      <tr style="border-bottom: 1px solid #f1f5f9;">
-        <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">XS (5-6)</td>
-        <td style="padding: 12px 10px;">&le; 152</td>
-        <td style="padding: 12px 10px;">240</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #f1f5f9; background-color: #f8fafc;">
-        <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">S (6-7)</td>
-        <td style="padding: 12px 10px;">152 – 178</td>
-        <td style="padding: 12px 10px;">240</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #f1f5f9;">
-        <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">M (7-8)</td>
-        <td style="padding: 12px 10px;">178 – 203</td>
-        <td style="padding: 12px 10px;">240</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #f1f5f9; background-color: #f8fafc;">
-        <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">L (8-9)</td>
-        <td style="padding: 12px 10px;">203 – 229</td>
-        <td style="padding: 12px 10px;">240</td>
-      </tr>
-      <tr>
-        <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">XL (9-10)</td>
-        <td style="padding: 12px 10px;">&ge; 229</td>
-        <td style="padding: 12px 10px;">&ge; 240</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin-top: 15px; margin-bottom: 0; text-align: center; font-style: italic;">
-    💡 Щоб правильно визначити розмір, виміряйте окружність долоні без великого пальця.
+
+  <!-- Контейнер-сітка: ділить блок на 2 частини (таблиця + картинка) -->
+  <div class="glove-flex-container" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;">
+    
+    <!-- Ліва колонка: Таблиця (займає більше місця на десктопі) -->
+    <div style="flex: 1 1 350px;">
+      <table style="width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 8px; overflow: hidden; font-size: 14px; border: 1px solid #e2e8f0;">
+        <thead>
+          <!-- Темно-синя фірмова шапка GloveHub -->
+          <tr style="background-color: #1e3a8a !important; text-align: center;">
+            <th style="padding: 12px 10px; font-weight: 700; color: #ffffff !important; border: none !important; width: 50%;">
+              <span style="color: #ffffff !important;">Ширина долоні</span>
+            </th>
+            <th style="padding: 12px 10px; font-weight: 700; color: #ffffff !important; border: none !important; width: 50%;">
+              <span style="color: #ffffff !important;">Розмір</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody style="color: #334155; text-align: center;">
+          <tr style="border-bottom: 1px solid #f1f5f9;">
+            <td style="padding: 12px 10px; font-weight: 600; color: #1e3a8a;">5-6 см</td>
+            <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">XS</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #f1f5f9; background-color: #f8fafc;">
+            <td style="padding: 12px 10px; font-weight: 600; color: #1e3a8a;">6-7 см</td>
+            <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">S</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #f1f5f9;">
+            <td style="padding: 12px 10px; font-weight: 600; color: #1e3a8a;">7-8 см</td>
+            <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">M</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #f1f5f9; background-color: #f8fafc;">
+            <td style="padding: 12px 10px; font-weight: 600; color: #1e3a8a;">8-9 см</td>
+            <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">L</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 10px; font-weight: 600; color: #1e3a8a;">9-10 см</td>
+            <td style="padding: 12px 10px; font-weight: bold; color: #1e3a8a;">XL</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Права колонка: Картинка -->
+    <div style="flex: 0 1 200px; text-align: center;">
+      <!-- Замініть посилання у лапках src="..." на ваше посилання на картинку -->
+      <img src="СЮДИ_ВСТАВТЕ_ПОСИЛАННЯ_НА_КАРТИНКУ" alt="Як виміряти долоню" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 180px;">
+    </div>
+
+  </div>
+
+  <p style="color: #64748b; font-size: 13px; line-height: 1.5; margin-top: 20px; margin-bottom: 0; text-align: center; font-style: italic;">
+    💡 Щоб правильно визначити розмір, виміряйте ширину долоні в найширшому місці (як показано на малюнку).
   </p>
 </div>
